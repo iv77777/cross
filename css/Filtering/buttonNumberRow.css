@@ -1,0 +1,125 @@
+/* -----Количество товара в ряду---- */
+.button-number-row {
+    width: 45px;
+    height: 50px;
+    border: 1px solid #a0aeb8;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.containerFilterParameters .button-number-row {
+    display: none;
+}
+/* mobile */
+.mobile {
+    height: 100%;
+    width: 100%;
+}
+.one-row-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+[data-card-size=small] .one-row-big {
+    display: none;
+}
+.one-row-big .el-1 {
+    width: 80%;
+    height: 10px;
+    border-radius: 1px;
+    margin: 2px;
+    background-color: #f2a814;
+}
+
+.one-row-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+[data-card-size=big] .one-row-small {
+    display: none;
+}
+.one-row-small .el-2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    margin: 3px;
+    background-color: #FF9800;
+}
+@media (min-width: 481px) {
+    .button-number-row {
+        width: 65px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+/* /mobile */
+/* tablet, desktop */
+.two-row {
+    display: flex;
+}
+.two-row .el-2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    margin: 3px;
+    background-color: #f2a814;
+}
+[data-card-size=small] .two-row .el-2 {
+    background-color: transparent;
+    border: 1px solid #a0aeb8;
+}
+.tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.three-row {
+    display: flex;
+}
+.three-row .el-2 {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #a0aeb8;
+    border-radius: 1px;
+    margin: 3px;
+}
+[data-card-size=small] .three-row .el-2 {
+    background-color: #f2a814;
+    border: none;
+}
+@media(max-width: 480px) {
+    .tablet {
+        display: none;
+    }
+}
+@media(min-width: 768px) {
+    .tablet {
+        display: none;
+    }
+    .button-number-row {
+        width: 85px;
+    }
+}
+@media(max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+}
+/* /tablet, /desktop */
+/* -----/Количество товара в ряду---- */

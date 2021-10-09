@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--mobile, tablet, desktop -->
+<html lang="ru" data-card-size="small" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MobileFiltering -->
+    <link rel="stylesheet" href="css/Filtering/buttonFilter.css">
+    <link rel="stylesheet" href="css/Filtering/filter.css">
+    <link rel="stylesheet" href="css/Filtering/buttonsFiltersStyles.css">
+    <link rel="stylesheet" href="css/Filtering/buttonSorting.css">
+    <link rel="stylesheet" href="css/Filtering/buttonNumberRow.css">
+    <!-- //MobileFiltering -->
+    <!-- conteinerCards -->
+    <link rel="stylesheet" href="css/conteinerCards/conteinerCards.css">
+    <!-- //conteinerCards -->
+</head>
+<body>
+  
+<div class="conteiner">
+  
+<!-- фильтрация (Filtering/filter.css)-->
+<div class="filters-wrapper" id="filters-wrapper"> 
+
+    <div id="Parameters">
+      <div class="heading">
+        <svg viewBox="0 0 16 16" width="16px" height="16px" class="_3Fot2i yL1Jef">
+          <path
+            d="M6.222 0H4.444a.89.89 0 00-.888.889v1.778c0 .49.398.889.888.889h1.778a.89.89 0 00.89-.89V.89A.89.89 0 006.221 0zM0 .889h2.667v1.778H0V.889zm8 0h8v1.778H8V.889zM0 7.11h8V8.89H0V7.11zm16 0h-2.667V8.89h2.666V7.11zm-6.222-.889h1.778c.49 0 .889.398.889.89v1.777a.89.89 0 01-.89.889H9.779a.89.89 0 01-.889-.89V7.112a.89.89 0 01.889-.889zm-4.445 7.111H0v1.778h5.333v-1.778zm5.334 0H16v1.778h-5.333v-1.778zm-.89 0a.89.89 0 00-.888-.889H7.11a.89.89 0 00-.889.89v1.777c0 .49.399.889.889.889h1.778a.89.89 0 00.889-.889v-1.778z"></path>
+        </svg>
+        Фильтр      
+      </div>
+      <!-- style="display: none;" -->
+      <div class="youChoosed" id="youChoosed">Вы выбрали:&#160;<span>(0 товаров)</span></div>
+      <button type="button" class="footwear" id="footwear-text" >Обувь&#160;<span></span></button>
+    </div>
+
+    <!-- Обгортка кнопок с фильтрами (Filtering/filter.css)-->
+    <div class="buttons-filters-wrapper">
+
+        <!-- ----------- button фильтр (Filtering/buttonFilter.css) ---------------------- --->
+        <label class="button-filter" id="button-filter">
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.22217 0H4.44434C3.9541 0 3.55566 0.398224 3.55566 0.888885V2.66666C3.55566 3.15735 3.9541 3.55554 4.44434 3.55554H6.22217C6.71289 3.55554 7.11133 3.15735 7.11133 2.66666V0.888885C7.11133 0.398224 6.71289 0 6.22217 0ZM0 0.888885H2.6665V2.66666H0V0.888885ZM8 0.888885H16V2.66666H8V0.888885ZM0 7.11111H8V8.88889H0V7.11111ZM15.9995 7.11111H13.333V8.88889H15.9995V7.11111ZM9.77783 6.22223H11.5557C12.0464 6.22223 12.4448 6.62045 12.4448 7.11111V8.88889C12.4448 9.37958 12.0464 9.77777 11.5557 9.77777H9.77783C9.2876 9.77777 8.88916 9.37958 8.88916 8.88889V7.11111C8.88916 6.62045 9.2876 6.22223 9.77783 6.22223ZM5.3335 13.3333H0V15.1111H5.3335V13.3333ZM10.667 13.3333H16.0005V15.1111H10.667V13.3333ZM9.77783 13.3333C9.77783 12.8427 9.37939 12.4445 8.88867 12.4445H7.11084C6.62061 12.4445 6.22217 12.8427 6.22217 13.3333V15.1111C6.22217 15.6018 6.62061 16 7.11084 16H8.88867C9.37939 16 9.77783 15.6018 9.77783 15.1111V13.3333Z">
+            </path>
+          </svg>
+          &nbsp;Фильтр
+        </label>
+        <!-- ----------- //button фильтр ---------------------- -->
+
+        <!-- Фильтр по Полу -->
+        <div class="wrapper-button">
+            <button type="button" class="buttonStyle buttonId">
+              Пол
+              <svg viewBox="0 0 15 15" width="8px" height="8px" class="svgButton">
+                <path
+                  у="evenodd"
+                  d="M7.158.3L.29 6.825a.929.929 0 000 1.349L7.158 14.7c.422.4 1.087.4 1.508 0a1.07 1.07 0 000-1.554L2.913 7.68a.247.247 0 010-.361l5.753-5.466a1.07 1.07 0 000-1.554 1.096 1.096 0 00-1.508 0z">
+                </path>
+              </svg>
+            </button>
+            <div class="checkbox-wrappe">
+              <div class="labelCheckbox buttonYouId">
+                  Мужчинам <span>(0)</span>
+              </div>
+              <div class="labelCheckbox buttonYouId">
+                  Женщинам <span>(0)</span>
+              </div>
+              <div class="labelCheckbox buttonYouId">
+                  Детям <span>(0)</span>
+              </div>
+            </div>
+
+        </div> 
+        <!-- /Фильтр по Полу -->
+        
+        <!-- Фильтр по сезону -->
+        <div class="wrapper-button">
+          
+          <button type="button" class="buttonStyle buttonId">
+            Сезон
+            <svg viewBox="0 0 15 15" width="8px" height="8px" class="svgButton">
+              <path
+                fill-rule="evenodd"
+                d="M7.158.3L.29 6.825a.929.929 0 000 1.349L7.158 14.7c.422.4 1.087.4 1.508 0a1.07 1.07 0 000-1.554L2.913 7.68a.247.247 0 010-.361l5.753-5.466a1.07 1.07 0 000-1.554 1.096 1.096 0 00-1.508 0z">
+              </path>
+            </svg>
+          </button>
+        
+          <div class="checkbox-wrappe">
+
+            <div class="labelCheckbox">
+              <label>
+                <input type="checkbox" class="checkbox" name="season" value="Spring-Summer"/>
+                <span class="fake"></span>
+                <span class="text">Весна-Лето</span>&nbsp;
+                <small>(0)</small>
+              </label>
+            </div>
+        
+            <div class="labelCheckbox">
+              <label>
+                <input type="checkbox" class="checkbox" name="season" value="Summer"/>
+                <span class="fake"></span>
+                <span class="text">Лето</span>&nbsp;
+                <small>(0)</small>
+              </label>
+            </div>
+
+            <div class="labelCheckbox">
+              <label>
+                <input type="checkbox" class="checkbox" name="season" value="Autumn-Winter"/>
+                <span class="fake"></span>
+                <span class="text">Осень-Зима</span>&nbsp;
+                <small>(0)</small>
+              </label>
+            </div>
+        
+            <div class="labelCheckbox">
+              <label>
+                <input type="checkbox" class="checkbox" name="season" value="Winter"/>
+                <span class="fake"></span>
+                <span class="text">Зима</span>&nbsp;
+                <small>(0)</small>
+              </label>
+            </div>
+            
+          </div>
+        </div>
+        <!-- /Фильтр по сезону --> 
+
+        <!-- Фильтр по брендам -->
+        <div class="wrapper-button">
+          
+          <button type="button" class="buttonStyle buttonId">
+            Бренд
+            <svg viewBox="0 0 15 15" width="8px" height="8px" class="svgButton">
+              <path
+                fill-rule="evenodd"
+                d="M7.158.3L.29 6.825a.929.929 0 000 1.349L7.158 14.7c.422.4 1.087.4 1.508 0a1.07 1.07 0 000-1.554L2.913 7.68a.247.247 0 010-.361l5.753-5.466a1.07 1.07 0 000-1.554 1.096 1.096 0 00-1.508 0z">
+              </path>
+            </svg>
+          </button>
+           <!--контеинер в который рендерим чекбоксы брендов (js/renderFilterBrend.js)-->
+          <div class="checkbox-wrappe" id="checkboxWrappe"></div>
+
+        </div>
+        <!-- /Фильтр по брендам --> 
+
+        <!-- Кнопка Отфильтрованно -->
+        <div class="buttonFiltered" id="buttonFiltered">
+          Отфильтровать:&#160;<span id="buttonFilteredSpan">0 товаров</span>
+        </div>
+        <!-- /Кнопка Отфильтрованно -->
+
+        <!-- ----------- Сортировка (Filtering/buttonSorting.cs) --------------------- -->
+        <div class="wrapper-button">
+          
+          <span class="buttonStyle buttonSort buttonId">
+            <svg
+              viewBox="0 0 14 18"
+              width="20px"
+              height="36px"
+            >
+              <path d="M4.05.22l2.722 2.625a.731.731 0 010 1.06.789.789 0 01-.55.22.789.789 0 01-.55-.22L4.278 2.56v14.69c0 .414-.349.75-.778.75-.43 0-.778-.336-.778-.75V2.56L1.328 3.905a.798.798 0 01-1.1 0 .731.731 0 010-1.06L2.95.22a.798.798 0 011.1 0zM12.672 14.095a.798.798 0 011.1 0 .731.731 0 010 1.06L11.05 17.78a.79.79 0 01-.55.22.79.79 0 01-.55-.22l-2.722-2.625a.731.731 0 010-1.06.798.798 0 011.1 0l1.394 1.345V.75c0-.414.349-.75.778-.75.43 0 .778.336.778.75v14.69l1.394-1.345z">
+              </path>
+            </svg>
+          </span>
+  
+          <div class="checkbox-wrappe">
+  
+            <div class="labelCheckbox buttonSortId">
+              По рейтингу
+            </div>
+  
+            <div class="labelCheckbox buttonSortId">
+              Сначала дешевле
+            </div>
+  
+            <div class="labelCheckbox buttonSortId">
+              Сначала дороже
+            </div>
+            
+          </div>
+        </div> 
+        <!-- -----------//Сортировка-------------------- -->
+
+        <!-- ------ Переключатиль количесва товара в ряду (Filtering/buttonNumberRow.css)----------- -->
+        <div class="button-number-row" id="button-number-row">
+          <!-- mobile -->
+          <div class="mobile">
+              <div class="one-row-big" id="one-row-big">
+                <div class="el-1"></div>
+                <div class="el-1"></div>
+              </div>
+              <div class="one-row-small" id="one-row-small">
+                <div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+                <div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+              </div>
+          </div>
+          <!-- /mobile -->
+          <!-- tablet -->
+          <div class="tablet">
+              <div class="two-row-big" id="two-row-big">
+                <div class="two-row">
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+                <div class="three-row">
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+              </div>
+          </div>
+          <!-- /tablet -->
+          <!-- desktop -->
+          <div class="desktop">
+              <div class="two-row-big" id="two-row-big">
+                <div class="two-row">
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+                <div class="three-row">
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                  <div class="el-2"></div>
+                </div>
+              </div>
+          </div>
+          <!-- /desktop -->
+        </div>
+        <!-- ------//Переключатиль количесва товара в ряду------ ------->
+    </div>
+</div>
+<!-- // фильтрация -->
+
+<!-- ************************************************************************ -->
+<!-- Контеинер для карточок товара (conteinerCards/conteinerCards.css) (render.jg)-->
+<div class="conteiner-cards"></div>
+
+<!-- ************************************************************************ -->
+
+</div>
+
+<!-- масив з товарамы -->
+<!-- <script src="js/productTest.js"></script> -->
+<script src="js/product.js"></script>
+<!-- Формируем и вставляем HTML з чекбоксами и имям брендов в фильтр по брендам -->
+<script src="js/renderFilterBrend.js"></script>
+<!-- главний фаил -->
+<script src="index.js"></script> 
+<!-- Формирует html карточок товара и вставляем на HTML страницу -->
+<script src="js/renderProduct.js"></script>   
+<!-- Показует скрываем меню фильтров -->
+<script src="js/filter.js"></script>
+ <!--Фильтрует товар по категориям -->
+<script src="js/filterYou.js"></script>
+<!-- сортировка товара (по цене и рейтингу) -->
+<script src="js/sort.js"></script>
+<!-- Устанавлюем большые или малинкие карточкы товара -->
+<script src="js/numberInArow.js"></script> 
+
+<!-- для проверки клласов и ID -->
+<script src="/classID.js"></script>
+</body>
+</html>

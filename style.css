@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #2b2d32;
+    overflow-y: scroll;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 1100px;
+    margin: -10px auto 10px;
+    padding: 10px;
+    box-shadow: 0 0 160px 5px #607d8ba1;
+}
+
+.conteiner.marginPaddingNoneId {
+    margin: 0px auto;
+    padding: 0px;
+}
+

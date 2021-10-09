@@ -1,0 +1,139 @@
+
+.filters-wrapper {
+    /* display: flex; */
+    margin-top: 10px;
+}
+.buttons-filters-wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+.containerFilterParameters .buttons-filters-wrapper {
+    display: block;
+}
+
+/* контеинер фильтра */
+.containerFilterParameters {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    margin-top: -19px;
+    padding-bottom: 60px;
+    background-color: #2b2d32;
+    z-index: 01;
+}
+/* заголовок (Фильтер з svg) */
+.heading {
+    background-color: #393d45;
+    height: 40px;
+    color: #f6f6f6;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+    /* margin-bottom: 16px; */
+    box-sizing: border-box;
+    font-size: 18px;
+    padding-left: 18px;
+    display: none;
+}
+.heading svg {
+    margin-right: 8px;
+    fill: #f6f6f6;
+}
+.containerFilterParameters .heading {
+    display: flex;
+}
+/* текст "Вы выбрали:" */
+.youChoosed {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    color: #f6f6f6;
+}
+.marginPaddingNoneId .youChoosed {
+    padding-top: 8px;
+}
+/*то что выбрали*/
+.choice, .footwear {
+    font-size: 15px;
+    letter-spacing: normal;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding-right: 20px;
+    line-height: 1.1;
+    font-weight: 400;
+    position: relative;
+    min-height: 32px;
+    width: auto;
+    background: transparent;
+    border: solid 1px #a0aeb8;
+    outline: none;
+    color: #f6f6f6;
+}
+.footwear {
+    padding-right: 2px;
+    cursor: default;
+    border: none;
+}
+.choice:hover {
+    color: #f2a814;
+    border: solid 1px #f2a814;
+}
+.choiceBrand {
+    font-weight: 600;
+}
+.choiceSeason {
+    border: solid 1px #f2a814;
+}
+.choicePol {
+    border: solid 1px #795548;
+}
+/* хрестикы  */
+.choice:after, .choice:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 10px;
+    top: 16px;
+    right: 6px;
+    border-radius: 1px;
+    background-color: #f6f6f6;
+}
+.choice:before {
+    transform: rotate(45deg);
+}
+.choice:after {
+    transform: rotate(-45deg);
+}
+.choice:hover:after, .choice:hover:before {
+    background-color: #f2a814;
+}
+/* ---------------------------------- */
+
+/* кнопка Отфильтрованно */
+.buttonFiltered {
+    width: 100%;
+    height: 50px;
+    background-color: #FF9800;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+}
+.containerFilterParameters .buttonFiltered {
+    display: flex;
+}
+.buttonFiltered:active {
+    background-color: #005b7c;
+}

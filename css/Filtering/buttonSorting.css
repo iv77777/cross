@@ -1,0 +1,34 @@
+.buttonSort {
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 1px  #a0aeb8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 50px;
+    margin-right: 5px;
+}
+.accordion-item--active .buttonSort {
+    border-bottom: none;
+}
+.buttonSort svg {
+    fill: #a0aeb8;
+}
+
+.containerFilterParameters .buttonSort {
+    display: none;
+}
+.sorting-list {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #393d45;
+    color: #fff;
+    padding: 14px 5px;
+    border: none;
+    outline: none;
+    width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+

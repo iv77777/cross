@@ -1,0 +1,28 @@
+/*кнопка фильтр */
+.button-filter {
+    width: 110px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-right: 5px;
+    background-color: #f2a814;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2px;
+}
+.button-filter svg {
+    fill: #fff;
+}
+.containerFilterParameters .button-filter {
+    display: none;
+}
+/* когда шырына екрана  521px и больше то скрываем кнопку фильтер */
+@media (min-width: 521px) {
+    .button-filter {
+        display: none;
+    }
+}
+/* /кнопка фильтр */
