@@ -49,16 +49,21 @@ function render(arrProduct) {
     productsPerPage ++;
     if(arrProduct[i].season === 'Summer') {
       saeson = "Лето";
-      SeasonImg = `<img class="imgSeason" src="img/SeasonImg/Season.png" alt="Лето">`;
+      SeasonImg = `<img class="imgSeason" src="img/SeasonImg/L.png" alt="Лето">`;
     }
     if(arrProduct[i].season === 'Autumn-Winter') {
       saeson = "Осень-Зима";
+      SeasonImg = `<img class="imgSeason" src="img/SeasonImg/o.png" alt="Лето">
+                  <img class="imgSeason" src="img/SeasonImg/z.png" alt="Лето">`;
     }
     if(arrProduct[i].season === 'Winter') {
       saeson = "Зима";
+      SeasonImg = `<img class="imgSeason" src="img/SeasonImg/z.png" alt="зима">`;
     }
     if(arrProduct[i].season === 'Spring-Summer') {
       saeson = "Весна-Лето";
+      SeasonImg = `<img class="imgSeason" src="img/SeasonImg/v.png" alt="Лето">
+                   <img class="imgSeason" src="img/SeasonImg/L.png" alt="Лето">`;
     }
     //провераем если у товара есть скидка то формирем HTML 
     if(arrProduct[i].discount) {
