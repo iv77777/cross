@@ -35,6 +35,7 @@
     margin-left: 7px;
 }
 .discount {
+    display:block;
     position: absolute;
     color: #ffffff;
     background-color: #ff4b4c;
